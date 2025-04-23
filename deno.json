@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "@aicone/byte": "jsr:@aicone/byte@^0.8.6",
+    "@stablelib/aes": "npm:@stablelib/aes@^2.0.1",
+    "@stablelib/gcm": "npm:@stablelib/gcm@^2.0.1",
+    "@tls/record": "jsr:@tls/record@^0.2.6"
+  }
+}
