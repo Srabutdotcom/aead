@@ -1,4 +1,4 @@
-
+//@ts-self-types="../type/aead.d.ts"
 import { AES, GCM, TLSInnerPlaintext, unity } from "./dep.ts";
 import { ivXorSeq } from "./helper/ivxorseq.js";
 import { plus1 } from "./helper/plus1.js";

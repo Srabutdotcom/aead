@@ -1,4 +1,30 @@
 {
+  "name": "@tls/aead",
+  "version": "0.0.1",
+  "exports": "./src/mod.ts",
+  "publish": {
+    "exclude": [
+      "dist/"
+    ]
+  },
+  "tasks": {
+    "test": "deno test",
+    "lint": "deno lint"
+  },
+  "lint": {
+    "include": [
+      "src/"
+    ],
+    "exclude": [
+      "dist/"
+    ],
+    "rules": {
+      "exclude": [
+        "no-slow-types",
+        "no-unused-vars"
+      ]
+    }
+  },
   "imports": {
     "@aicone/byte": "jsr:@aicone/byte@^0.8.6",
     "@stablelib/aes": "npm:@stablelib/aes@^2.0.1",

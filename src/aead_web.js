@@ -1,4 +1,4 @@
-
+//@ts-self-types="../type/aead_web.d.ts"
 import { unity, TLSInnerPlaintext } from "./dep.ts";
 import { ivXorSeq } from "./helper/ivxorseq.js";
 import { plus1 } from "./helper/plus1.js";

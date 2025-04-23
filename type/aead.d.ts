@@ -2,7 +2,7 @@ import { GCM, TLSInnerPlaintext } from "../src/dep.ts";
 
 /**
  * Class for Authenticated Encryption with Associated Data (AEAD) using GCM.
- * @version __VERSION__
+ * @version 0.0.1
  */
 export class Aead {
   /**
