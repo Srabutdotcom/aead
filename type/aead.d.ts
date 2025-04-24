@@ -1,8 +1,12 @@
 import { GCM, TLSInnerPlaintext } from "../src/dep.ts";
 
+declare class Cipher {
+  toString(): string
+}
+
 /**
  * Class for Authenticated Encryption with Associated Data (AEAD) using GCM.
- * @version 0.0.1
+ * @version 0.0.2
  */
 export class Aead {
   /**
@@ -31,7 +35,7 @@ export class Aead {
    * @param {Uint8Array} key - The encryption key.
    * @param {Uint8Array} iv - The initialization vector (IV).
    */
-  constructor(key: Uint8Array, iv: Uint8Array);
+  constructor(key: Uint8Array, iv: Uint8Array, cipher: Cipher);
 
   /**
    * Seals (encrypts and authenticates) the content.

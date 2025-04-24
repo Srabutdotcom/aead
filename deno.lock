@@ -20,6 +20,7 @@
     "npm:@noble/hashes@^1.7.2": "1.7.2",
     "npm:@peculiar/x509@^1.12.3": "1.12.3",
     "npm:@stablelib/aes@^2.0.1": "2.0.1",
+    "npm:@stablelib/chacha20poly1305@^2.0.1": "2.0.1",
     "npm:@stablelib/gcm@^2.0.1": "2.0.1",
     "npm:@stablelib/hmac@^2.0.1": "2.0.1",
     "npm:@stablelib/sha256@^2.0.1": "2.0.1",
@@ -280,6 +281,24 @@
     "@stablelib/blockcipher@2.0.0": {
       "integrity": "sha512-c0iMTah5a5KxeqVyf6ejpaRkYanODvGaQn8wgvLLAnY23fHZMjhR6ycQVvasW2nIzAmc+faetpRORJqAfaE/yw=="
     },
+    "@stablelib/chacha20poly1305@2.0.1": {
+      "integrity": "sha512-kOoBsXbDPVRlelzXl+5WViycgM19lD7lF3Bc3KWI+DzId0Stc2HlxAfSc+Xpn3RgqSCl1ZNTXr33LegqBhBBaw==",
+      "dependencies": [
+        "@stablelib/aead",
+        "@stablelib/binary",
+        "@stablelib/chacha",
+        "@stablelib/constant-time",
+        "@stablelib/poly1305",
+        "@stablelib/wipe"
+      ]
+    },
+    "@stablelib/chacha@2.0.1": {
+      "integrity": "sha512-lS1FqtNqofxe2vLkRsLli2m3x/XanUyAYRphLhdHumKeIsLbjbCXdCq3Pf/eWiO7G3QlSG5ViqnoVjktzfLWMg==",
+      "dependencies": [
+        "@stablelib/binary",
+        "@stablelib/wipe"
+      ]
+    },
     "@stablelib/constant-time@2.0.1": {
       "integrity": "sha512-0NWPogffRm+UWBH0+iM5otZmNrVe5OHFIvyoNIVankMAYOQzMwcdVALOVPrB5Ho0dST+Oc3H8/hPh65Z8R/uew=="
     },
@@ -314,6 +333,13 @@
     },
     "@stablelib/int@2.0.1": {
       "integrity": "sha512-Ht63fQp3wz/F8U4AlXEPb7hfJOIILs8Lq55jgtD7KueWtyjhVuzcsGLSTAWtZs3XJDZYdF1WcSKn+kBtbzupww=="
+    },
+    "@stablelib/poly1305@2.0.1": {
+      "integrity": "sha512-D8xfZcL/5zeVARJ9I2fZOUCnZvsJx8G4JDQvD+ecsnaCildPtqZDwqqjtOc4cfHAdScrMjOzUVsssjXUTBw3YQ==",
+      "dependencies": [
+        "@stablelib/constant-time",
+        "@stablelib/wipe"
+      ]
     },
     "@stablelib/sha256@2.0.1": {
       "integrity": "sha512-LA1PaLDc6Lv72ppA4PEZ7abDE741KfG7k7QhBiUyIfViMqrwWv8HqQQFPeuPfS4k2OxFv++IAgc8HlvdBatD+w==",
@@ -495,6 +521,7 @@
       "jsr:@aicone/byte@~0.8.6",
       "jsr:@tls/record@~0.2.6",
       "npm:@stablelib/aes@^2.0.1",
+      "npm:@stablelib/chacha20poly1305@^2.0.1",
       "npm:@stablelib/gcm@^2.0.1"
     ]
   }

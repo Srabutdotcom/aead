@@ -2,7 +2,7 @@ import { TLSInnerPlaintext } from "../src/dep.ts";
 
 /**
  * Class for Authenticated Encryption with Associated Data (AEAD) using WebCrypto API
- * @version 0.0.1
+ * @version 0.0.2
  */
 export class Aead_Web {
   /**

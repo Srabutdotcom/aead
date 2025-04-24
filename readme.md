@@ -1,7 +1,7 @@
 # AEAD Encryption Class
 
 This module exports the `Aead` class, a wrapper for authenticated encryption using AES-GCM. It handles encryption ("sealing") and decryption ("opening") of TLS 1.3 `TLSInnerPlaintext` records using an AEAD cipher with per-record sequence numbers and derived nonces.
-@version 0.0.1
+@version 0.0.2
 
 ---
 
