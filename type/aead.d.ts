@@ -6,7 +6,7 @@ declare class Cipher {
 
 /**
  * Class for Authenticated Encryption with Associated Data (AEAD) using GCM.
- * @version 0.0.2
+ * @version 0.0.3
  */
 export class Aead {
   /**
